@@ -1,0 +1,145 @@
+/* ZERO MARGIN, PADDING FOR ALL ELEMENTS FIRSTLY */
+html, body, div, 
+h1, h2, h3, h4, h5, h6, 
+p, 
+ul, li,
+section{
+	margin:0;
+	padding:0;
+}
+
+body {
+
+}
+
+#header {
+	text-align: center;
+}
+
+.title {
+	font: bold 18px "Times New";
+	line-height: 40px;
+	align: center;
+}
+
+#nav {
+	width: 100%;
+	padding: 0px;	/* must define couple times? */
+}
+
+ul{
+    list-style-type: none;
+	margin: 0 auto;
+}
+
+li {
+	float: left;
+	width: 25%;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    border-bottom: solid 1px #CCCCCC;
+    padding: 0px;
+}
+
+li a:hover {
+    background-color: #bcbcbc;
+    color: #BA8A92;
+}
+
+li img {
+	display: block;
+	margin: auto;
+	width: 98%;
+}
+
+#footer {
+	text-align: center;
+}
+
+.form-left-col {
+    width: 70%;
+    float: left;
+}
+
+#changephoto {
+
+}
+
+#teaphoto {
+	border: 0px ;
+}
+
+#teaphoto:hover {
+	border: 1px solid red;
+}
+
+.form-left-col img {
+	display: block;
+	margin: auto;
+	height: 40%;
+	width: 40%;
+}
+
+.form-right-col {
+	width: 30%;
+	float: left;
+}
+
+.form-right-col input, .form-right-col textarea {
+    border: 1px solid #ccc;
+    min-height: 30px;
+	width: 100%;
+	margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#description-wraper {
+	width: 100%;
+}
+
+#description  {
+	width: 100%;
+}
+
+/* Change the font size when screen narrow then 640px */
+@media screen and (max-width: 640px) {
+	body {
+
+	}
+
+	li {
+		width: 50%;
+	}
+
+	.form-right-col input, .form-right-col textarea {
+		width: 100%;
+	}
+	
+	.form-left-col {
+		width: 100%;
+		float: left;
+	}
+	
+	.form-right-col {
+		width: 100%;
+		float: left;
+	}
+	
+}
+
+/* Change the font size when screen narrow then 480px */
+@media screen and (max-width: 480px) {
+	
+	li {
+		width: 100%;
+	}
+	
+	.form-left-col img {
+		height: 100%;
+		width: 100%;
+	}
+}
