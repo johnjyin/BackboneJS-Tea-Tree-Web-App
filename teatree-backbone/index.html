@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Backbone Tea Tree</title>
+<link rel="stylesheet" href="./css/styles.css" />
+<meta charset="utf-8" />
+</head>
+
+<body>
+
+<div id="header" align="center"><span class="title" >Welcome to Backbone Tea Tree</span></div>
+
+<div id="nav"></div>
+
+<div id="content">
+
+<div id="summary">
+<h3> This is one client-side MVC & single-page applications (SPAs) based on Backbone.js 
+with following features: </h3>
+<ol>
+<li> one MVC implementation on Backbone framework </li>
+<li> when one Model's data change, all the Views bound to that Model automatically re-render </li>
+<li> integrate with RESTful services based on Slim framework (PHP version) </li>
+<li> one Responsive Web Design (RWD) application by CSS3 Media Queries </li>
+</ol>
+</div>
+</div>
+
+<!-- Templates -->
+
+<script type="text/template" id="tpl-header">
+    <span class="title">Backbone Tea Tree</span>
+	<button class="new">New Tea</button>
+</script>
+
+<script type="text/template" id="tpl-tea-list-item">
+	<p><a href="#teas/<%= id %>"><img src="./images/<%= picture %>" alt="<%= name %>" /></a></p>
+</script>
+
+<script type="text/template" id="tpl-tea-details">
+     <div class="form-left-col">
+		<form name="newPhoto">
+			<p>Select & Upload New Photo: <input type="file" name="changephoto" id="changephoto"> 
+			<br /> Or drag photo onto existed photo!</p>
+		</form>
+        <img height="350" id="teaphoto" src="./images/<%= picture %>"/>
+		
+	</div>
+	<div class="form-right-col">
+        <label>Id:</label>
+        <input type="text" id="id" name="id" value="<%= id %>" disabled />
+        <label>Name:</label>
+        <input type="text" id="name" name="name" value="<%= name %>" required/>
+		<label>Brand:</label>
+        <input type="text" id="brand" name="brand" value="<%= brand %>" required/>
+        <label>Serving:</label>
+        <input type="text" id="serving" name="serving" value="<%= serving %>" required/>
+        <label>Servings:</label>
+        <input type="text" id="servings" name="servings" value="<%= servings %>"/>
+        <label>Ingredients:</label>
+        <textarea id="ingredients" name="ingredients"><%= ingredients %></textarea>
+    </div>
+	<div><label>Description:</label>
+        <textarea id="description" name="description"><%= description %></textarea>
+	</div>
+	
+	<button class="save">Save</button>
+    <button class="delete">Delete</button>
+
+</script>
+
+<!-- JavaScript -->
+
+<script src="lib/jquery-2.0.3.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/backbone.js"></script>
+<script src="js/main.js"></script> 
+
+
+<script> 
+</script>
+
+</body>
+</html>
