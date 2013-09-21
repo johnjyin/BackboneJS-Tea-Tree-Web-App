@@ -119,8 +119,8 @@ window.TeaView = Backbone.View.extend({
 	// DOM event-types are supported, including click, submit, 
 	// mouseover, dblclick and more.
     events:{
-        "click .saveNewTea"  		:	"saveTea", // upload photo first, 
-													// then save any changes
+        "click .save"  				:	"saveTea", // upload photo first, 
+													// then save any change
         "click .delete"				:	"deleteTea",
 		"change #changephoto"		:	"changePhoto",// listen changephoto event
 		"drop #teaphoto"			:	"dropPhoto",  // listen drop events
@@ -176,11 +176,11 @@ window.TeaView = Backbone.View.extend({
 			// is sent to the server, as well as a "sync" event, once
 			// the server has responded with the successful creation
 			// of the model.
-            window.teaList.create( self.model, {
+            app.teaList.create( self.model, {
 					success: function() {
 						console.log('Successful create & save model (id: ' 
 							+ self.model.id + ' )');
-						// window.navigate('teas/'+self.model.id, false);
+						app.navigate('wines/'+self.model.id, false);
 					}
 			});
         } else {
@@ -208,7 +208,7 @@ window.TeaView = Backbone.View.extend({
             }
         });
 		self.close();
-		// window.navigate('/', false);
+		app.navigate('/', false);
         return false;
     },
 
@@ -263,7 +263,6 @@ window.TeaView = Backbone.View.extend({
 	
 });
 
-/*
 window.HeaderView = Backbone.View.extend({
 
     template:_.template($('#tpl-header').html()),
@@ -288,10 +287,10 @@ window.HeaderView = Backbone.View.extend({
 
 });
 
+
 // Router
 window.AppRouter = Backbone.Router.extend({
 
-	/*
     routes:{
         "":				"list",
 		"newtea":		"newTea",
@@ -333,7 +332,6 @@ window.AppRouter = Backbone.Router.extend({
 		$.mobile.changePage( $('#new-tea') ); 
     }
 	
-	
 });
 
 var app = new AppRouter();
@@ -342,4 +340,4 @@ var app = new AppRouter();
 // properly, call Backbone.history.start() to begin monitoring 
 // hashchange events, dispatching routes.
 Backbone.history.start();
-*/
+
