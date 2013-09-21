@@ -21,13 +21,13 @@ Here is the folders base structure:
 You just need XAMPP in u local computer, and install the MYSQL database table 'ct_tbl_tea' by TeaTree-Backbone-Database.sql
 
 Before you try to run each app, I do suggest you look through following related of my blogs: 
-<a href="www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html">
+<a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_blank">
 Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_black">Basic Infrastructure</a>
-- <a href="www.ebizdesigner.com/website-building/backbone/item/51-backbonejs-mvc-app-tea-tree-part-2.html">CRUD Operations</a>
-- <a href="www.ebizdesigner.com/website-building/backbone/item/52-backbonejs-mvc-app-tea-tree-part-3.html">Upload Pictures</a>
-- <a href="www.ebizdesigner.com/website-building/backbone/item/54-backbone-mvc-teatree-modular-by-requirejs.html">Modular by RequireJS</a>
-- <a href="www.ebizdesigner.com/website-building/backbone/item/55-backbone-mobile-web-app-teatree-jquerymobile.html">Mobilized by jQM</a>
+- <a href="http://www.ebizdesigner.com/website-building/backbone/item/51-backbonejs-mvc-app-tea-tree-part-2.html" target="_blank">CRUD Operations</a>
+- <a href="http://www.ebizdesigner.com/website-building/backbone/item/52-backbonejs-mvc-app-tea-tree-part-3.html" target="_blank">Upload Pictures</a>
+- <a href="http://www.ebizdesigner.com/website-building/backbone/item/54-backbone-mvc-teatree-modular-by-requirejs.html" target="_blank">Modular by RequireJS</a>
+- <a href="http://www.ebizdesigner.com/website-building/backbone/item/55-backbone-mobile-web-app-teatree-jquerymobile.html" target="_blank">Mobilized by jQM</a>
 
 I share this series apps with everybody, and very happen to hear it could be a little help. 
 Any questions or issues, please feedback to me so as it could be better help others.
