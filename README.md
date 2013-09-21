@@ -15,4 +15,11 @@ This web application is based on Backbone.js with following features:
 I share this app with everybody like me, and very happen to hear it could be a little help. 
 Any questions or issues, please feedback to me so as it could be more helpful.
 
-Please refer to my blogger for its tutorial on www.ebizdesigner.com.
+Please refer to my blogger for its tutorial: 
+<a href="www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html">
+Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
+- <a href="www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html">Basic Infrastructure</a>
+- <a href="www.ebizdesigner.com/website-building/backbone/item/51-backbonejs-mvc-app-tea-tree-part-2.html">CRUD Operations</a>
+- <a href="www.ebizdesigner.com/website-building/backbone/item/52-backbonejs-mvc-app-tea-tree-part-3.html">Upload Pictures</a>
+- <a href="www.ebizdesigner.com/website-building/backbone/item/54-backbone-mvc-teatree-modular-by-requirejs.html">Modular by RequireJS</a>
+- <a href="www.ebizdesigner.com/website-building/backbone/item/55-backbone-mobile-web-app-teatree-jquerymobile.html">Mobilized by jQM</a>
