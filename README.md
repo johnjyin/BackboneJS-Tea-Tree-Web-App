@@ -5,22 +5,22 @@ This web application is based on Backbone.js with following features:
 
 - is one MVC SPAs having Backbone nested views, collection, and models
 - have data CRUD operations
-- whenever one Model's data change, all the Views bound to that Model automatically re-render 
-- integrate with RESTful services based on Slim framework (PHP version)
+- whenever one Model's data change, all the Views bound automatically re-render 
+- be integrate with RESTful services based on Slim framework (PHP version)
 - use XMLHttpRequest object to upload picture data to web server
-- user can drag & drop image file and upload it to web server utilize HTML 5 APIs: communication, drag & drop
-- is one Responsive Web Design (RWD) application by CSS3 Media Queries mechnics
+- user can drag & drop image file and upload it to web server by HTML 5 APIs: FormData, FileReader
+- is one Responsive Web Design (RWD) application by CSS3 Media Queries 
 - is one modular Backbone app which loading JS code as-needed by RequireJS
 
-Here is the folders base structure:
+Here is the folder structure:
    - TeaTree-Backbone-Database.sql 
-   - \ teatree-backbone \ [one backbone basic web app: Tea Tree]
-   - \ teatree-backbone-requirejs \ [Tea Tree web app (modular version)]
-   - \ teatree-jqm \ [Tea Tree web app (mobilized by jQuery Mobile)]
+   - \ teatree-backbone \ [ the basic backbone web app: Tea Tree ]
+   - \ teatree-backbone-requirejs \ [ Tea Tree web app ( modular version ) ]
+   - \ teatree-jqm \ [ Tea Tree web app ( mobilized by jQuery Mobile ) ]
 
-You just need XAMPP in u local computer, and install the MYSQL database table 'ct_tbl_tea' by TeaTree-Backbone-Database.sql
+You just need set up XAMPP on u local computer, which install one MYSQL database and table 'ct_tbl_tea' by TeaTree-Backbone-Database.sql
 
-Before you try to run each app, I do suggest you look through following related of my blogs: 
+Before you try to run each apps, I do suggest you look through following related of my blogs: 
 <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_blank">
 Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_black">Basic Infrastructure</a>
@@ -30,4 +30,4 @@ Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/55-backbone-mobile-web-app-teatree-jquerymobile.html" target="_blank">Mobilized by jQM</a>
 
 I share this series apps with everybody, and very happen to hear it could be a little help. 
-Any questions or issues, please feedback to me so as it could be better help others.
+Any questions or issues, please feedback to me so as it could have better helps to others.
