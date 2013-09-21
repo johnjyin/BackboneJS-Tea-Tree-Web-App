@@ -12,7 +12,14 @@ This web application is based on Backbone.js with following features:
 - is one Responsive Web Design (RWD) application by CSS3 Media Queries mechnics
 - is one modular Backbone app which loading JS code as-needed by RequireJS
 
-I share this app with everybody like me, and very happen to hear it could be a little help. 
+I share this series app with everybody, and very happen to hear it could be a little help. 
+
+The subfolders are as following:
+   - \ teatree-backbone \ [one backbone basic web app: Tea Tree]
+   - \ teatree-backbone-requirejs \ [Tea Tree web app (modular version)]
+   - \ teatree-jqm \ [Tea Tree web app (mobilized by jQuery Mobile)]
+
+
 Any questions or issues, please feedback to me so as it could be more helpful.
 
 Please refer to my blogger for its tutorial: 
