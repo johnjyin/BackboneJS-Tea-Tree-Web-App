@@ -1,0 +1,29 @@
+<div class="form-left-col">
+	<form name="newPhoto">
+		<p>Select & Upload New Photo: <input type="file" name="changephoto" id="changephoto"> 
+		<br /> Or drag photo onto existed photo!</p>
+	</form>
+     <img height="350" id="teaphoto" src="./images/<%= picture %>"/>
+	
+</div>
+<div class="form-right-col">
+     <label>Id:</label>
+     <input type="text" id="id" name="id" value="<%= id %>" disabled />
+     <label>Name:</label>
+     <input type="text" id="name" name="name" value="<%= name %>" required/>
+	 <label>Brand:</label>
+     <input type="text" id="brand" name="brand" value="<%= brand %>" required/>
+     <label>Serving:</label>
+     <input type="text" id="serving" name="serving" value="<%= serving %>" required/>
+     <label>Servings:</label>
+     <input type="text" id="servings" name="servings" value="<%= servings %>"/>
+     <label>Ingredients:</label>
+     <textarea id="ingredients" name="ingredients"><%= ingredients %></textarea>
+</div>
+<div><label>Description:</label>
+     <textarea id="description" name="description"><%= description %></textarea>
+</div>
+
+<button class="save">Save</button>
+<button class="delete">Delete</button>
+
