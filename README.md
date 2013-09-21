@@ -11,3 +11,8 @@ This web application is based on Backbone.js with following features:
 - user can drag & drop image file and upload it to web server utilize HTML 5 APIs: communication, drag & drop
 - is one Responsive Web Design (RWD) application by CSS3 Media Queries mechnics
 - is one modular Backbone app which loading JS code as-needed by RequireJS
+
+I share this app with everybody like me, and very happen to hear it could be a little help. 
+Any questions or issues, please feedback to me so as it could be more helpful.
+
+Please refer to my blogger for its tutorial on www.ebizdesigner.com.
