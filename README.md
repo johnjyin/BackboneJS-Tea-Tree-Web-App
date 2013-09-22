@@ -31,7 +31,7 @@ Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/52-backbonejs-mvc-app-tea-tree-part-3.html" target="_blank">Upload Pictures</a>
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/54-backbone-mvc-teatree-modular-by-requirejs.html" target="_blank">Modular by RequireJS</a>
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/55-backbone-mobile-web-app-teatree-jquerymobile.html" target="_blank">Mobilized by jQM</a>
-- <a href="http://www.ebizdesigner.com/website-building/backbone/item/53-backbonejs-jqm-mobile-app-tea-tree-part-6.html" target="_blank">Mobile Tea Tree App</a>
+- <a href="http://www.ebizdesigner.com/website-building/backbone/item/53-backbonejs-jqm-mobile-app-tea-tree-part-6.html" target="_blank">Mobile Tea Tree App</a> [ Click <a href="http://demo.ebizdesigner.com/teatree/" target="_blank">here</a> to run the application</a> ]
 
 I share this series apps with everybody, and very happen to hear it could be a little help. 
 Any questions or issues, please feedback to me so as it could have better helps to others.
