@@ -1,6 +1,8 @@
 BackboneJS-Tea-Tree-Web-App
 ===========================
 
+Click <a href="http://demo.ebizdesigner.com/teatree/" target="_blank"><B>here<B></a> to run the jQuery Mobile + Backbone app. Note: All updating functions have been disabled!
+
 This series web apps are mainly based on Backbone.js with following features:
 
 - MVC SPAs having Backbone nested views, collection, and models
@@ -14,7 +16,6 @@ This series web apps are mainly based on Backbone.js with following features:
 - Mobilized web app by jQuery Mobile UI
 - jQuery Mobile app by jQuery Mobile + Backbone
 
-Click <a href="http://demo.ebizdesigner.com/teatree/" target="_blank"><mark>here<mark></a> to run this app. Note: All updating functions have been disabled! ]
 
 Here is the folder structure:
    - TeaTree-Backbone-Database.sql 
