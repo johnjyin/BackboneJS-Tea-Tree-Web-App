@@ -8,16 +8,12 @@ section{
 	padding:0;
 }
 
-body {
-
-}
-
 #header {
 	text-align: center;
 }
 
 .title {
-	font: bold 18px "Times New";
+	font: bold 20px "Times New";
 	line-height: 40px;
 	align: center;
 }
@@ -65,27 +61,44 @@ li img {
     float: left;
 }
 
-#changephoto {
-
+.btnFileInput {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
 }
 
-#teaphoto {
+.changephoto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.teaphoto {
 	border: 0px ;
 }
 
-#teaphoto:hover {
+.teaphoto:hover {
 	border: 1px solid red;
 }
 
 .form-left-col img {
 	display: block;
-	margin: auto;
+	margin: 0 auto;
 	height: 40%;
 	width: 40%;
 }
 
 .form-right-col {
-	width: 30%;
+	width: 29%;
+	margin: 0 auto;
 	float: left;
 }
 
@@ -97,13 +110,11 @@ li img {
     margin-top: 5px;
 }
 
-#description-wraper {
-	width: 100%;
+#description-wraper, #description  {
+	width: 99%;
+	margin: 0 auto;
 }
 
-#description  {
-	width: 100%;
-}
 
 /* Change the font size when screen narrow then 640px */
 @media screen and (max-width: 640px) {
@@ -111,23 +122,25 @@ li img {
 	li {
 		width: 25%;
 	}
-
-	.form-right-col input, .form-right-col textarea {
-		width: 99%;
+	
+	.form-left-col img {
+		height: 90%;
+		width: 90%;
 	}
 	
-	.form-left-col {
+	#description-wraper, 
+	#description{
 		width: 99%;
+		float: none;
 	}
 	
-	.form-right-col {
+	.form-right-col, 
+	.form-left-col,
+	.form-right-col input, 
+	.form-right-col textarea {
 		width: 99%;
+		float: none;
 	}
-	
-	#description-wraper {
-		width: 99%;
-	}
-	
 }
 
 /* Change the font size when screen narrow then 480px */
@@ -137,8 +150,4 @@ li img {
 		width: 50%;
 	}
 	
-	.form-left-col img {
-		height: 90%;
-		width: 90%;
-	}
 }

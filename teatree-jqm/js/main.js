@@ -119,12 +119,12 @@ window.TeaView = Backbone.View.extend({
 	// DOM event-types are supported, including click, submit, 
 	// mouseover, dblclick and more.
     events:{
-        "click .saveNewTea"  		:	"saveTea", // upload photo first, 
+        "click .btnSaveTea"  		:	"saveTea", // upload photo first, 
 													// then save any changes
-        "click .delete"				:	"deleteTea",
-		"change #changephoto"		:	"changePhoto",// listen changephoto event
-		"drop #teaphoto"			:	"dropPhoto",  // listen drop events
-		"dragover #teaphoto"		: 	function(e) {
+        "click .btnDelTea"			:	"deleteTea",
+		"change .changephoto"		:	"changePhoto",// listen changephoto event
+		"drop .teaphoto"			:	"dropPhoto",  // listen drop events
+		"dragover .teaphoto"		: 	function(e) {
 			e.preventDefault();
 		}
     },
@@ -194,6 +194,7 @@ window.TeaView = Backbone.View.extend({
     },
 
     deleteTea:function () {
+		try {
 		// Destroys the model on the server by delegating 
 		// an HTTP DELETE request to Backbone.sync.
 		var self = this;
@@ -201,15 +202,15 @@ window.TeaView = Backbone.View.extend({
             success: function (model) {
 				// delete new created model: id == null
                  console.log('Tea (' + self.model.id + ') deleted successfully');
-				// $(this.el).unbind();
-				// Remove the view from DOM
-				// $(this.el).remove();
-                // app.navigate('/', true);
             }
         });
 		self.close();
 		// window.navigate('/', false);
         return false;
+		} catch (e) {
+			console.log("Error happened in 'deleteTea function'");
+			return false;
+		}
     },
 
 	changePhoto:function (event) {
@@ -228,7 +229,7 @@ window.TeaView = Backbone.View.extend({
 			// and display it in the img tag.
 			var reader = new FileReader();
 			reader.onloadend = function () {
-				$('#teaphoto').attr('src', reader.result);
+				$('.teaphoto').attr('src', reader.result);
 			};
 			reader.readAsDataURL(this.pictureFile);
 		}
@@ -248,7 +249,7 @@ window.TeaView = Backbone.View.extend({
 		// and display it in the img tag.
         var reader = new FileReader();
         reader.onloadend = function () {
-            $('#teaphoto').attr('src', reader.result);
+            $('.teaphoto').attr('src', reader.result);
         };
         reader.readAsDataURL(this.pictureFile);
 		return false;
@@ -262,84 +263,3 @@ window.TeaView = Backbone.View.extend({
 	}
 	
 });
-
-/*
-window.HeaderView = Backbone.View.extend({
-
-    template:_.template($('#tpl-header').html()),
-
-    initialize:function () {
-        this.render();
-    },
-
-    render:function (eventName) {
-        $(this.el).html(this.template());
-        return this;
-    },
-
-    events: {
-    //    "click .new": "newTeaEvent"
-    },
-	
-    newTeaEvent:function (event) {
-        app.navigate('teas/new', true);
-		return false;
-    }
-
-});
-
-// Router
-window.AppRouter = Backbone.Router.extend({
-
-	/*
-    routes:{
-        "":				"list",
-		"newtea":		"newTea",
-        "teas/:id":		"teaDetails"
-    },
-
-	initialize:function () {
-        $('#header').html(new HeaderView().render().el);
-    },
-	
-    list:function () {
-        this.teaList = new TeaCollection();
-		
-		// When the model data returns from the server, it uses set to 
-		// (intelligently) merge the fetched models, unless you pass 
-		// {reset: true}, in which case the collection will be reset.
-        this.teaList.fetch();
-		
-		// When creating a new View, the options passed,like model, 
-		// collection, etc. are attached to the view as 'this.options' 
-		// for future reference
-        this.teaListView = new TeaListView({collection:this.teaList}); 
-		
-        $('#nav').html(this.teaListView.render().el);
-		
-    },
-
-    teaDetails: function (id) {
-        this.tea = this.teaList.get(id);
-        this.teaView = new TeaView({model:this.tea});
-        $('#content').html(this.teaView.render().el);
-		$.mobile.changePage( $('#tea-details') ); 
-    },
-	
-	newTea: function (event) {
-        //if (app.teaView) app.teaView.close();
-        this.teaView = new TeaView( { model: new Tea() } );
-        $('#newtea-content').html( this.teaView.render().el );
-		$.mobile.changePage( $('#new-tea') ); 
-    }
-	
-	
-});
-
-var app = new AppRouter();
-
-// When all of Routers have been created, and all routes are set up 
-// properly, call Backbone.history.start() to begin monitoring 
-// hashchange events, dispatching routes.
-Backbone.history.start();
-*/

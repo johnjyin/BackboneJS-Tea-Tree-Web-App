@@ -3,13 +3,21 @@
 <head>
 	<title>Backbone + jQuery-Mobile Tea Tree App</title>
 	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	 
 	<link rel="stylesheet" href="./css/styles.css" />
-	
 	<link rel="stylesheet" href="./css/jquery.mobile-1.3.2.css" />
-	<script src="lib/jquery-2.0.3.js"></script>
+	
+	<script src="lib/jquery-1.9.1.js"></script>
 	<script src="lib/jquery.mobile-1.3.2.js"></script>
+	
 	<script src="lib/underscore.js"></script>
 	<script src="lib/backbone.js"></script>
+
 	<!-- Templates -->
 	<script type="text/template" id="tpl-tea-list-item">
 	<p><a href="#tea-details?<%= id %>"><img src="./images/<%= picture %>" 
@@ -17,13 +25,14 @@
 	</script>
 
 	<script type="text/template" id="tpl-tea-details">
-     <div class="form-left-col">
-		<form name="newPhoto">
-			<div > Set photo by Drag & Drop or <input type="file"
-				name="changephoto" id="changephoto" data-role="none"></div>
+    <div class="form-left-col" data-role="none" >
+		<form name="newPhoto" data-role="none">
+			Drag & Drop or 
+			<div class="btnFileInput" data-icon="plus" data-role="none"
+			data-inline="true" data-mini="true">Browse<input type="file" name="changephoto" class="changephoto" data-role="none" >
+			</div>
 		</form>
-        <img id="teaphoto" src="./images/<%= picture %>"/>
-		
+        <img class="teaphoto" src="./images/<%= picture %>"/>
 	</div>
 	<div class="form-right-col" data-role="none">
         <label data-inline="true">Id:</label>
@@ -44,26 +53,26 @@
         <textarea id="description" name="description"><%= description %>
 			</textarea>
 	</div>
-	<button class="saveNewTea" data-role="button" data-icon="check" data-inline="true">Save</button>
-    <button class="delete" data-role="button" data-icon="delete" data-inline="true">Delete</button>
-	<br /><br />
-	</script>	
+	<div class="btnBar">
+		<button class="btnSaveTea" data-icon="check" data-inline="true" >Save</button>
+		<button class="btnDelTea" data-icon="delete" data-inline="true" >Delete</button>
+	</div>
+	</script>
 	
 	<script src="js/main.js"></script> 
-	<script src="js/ttpage.js"></script>
-	<meta charset="utf-8" />
+	<script src="js/main-jm.js"></script>
+
 </head>
 
 <body>
 
-<div id="tea-list" data-title="Tea List" data-role="page" 
-		data-fullscreen="true" >
+<div id="tea-list" data-title="Tea List" data-role="page" data-overflow="auto" >
 
-	<div id="header" data-role="header" data-overflow="auto" 
-		data-theme="c">
-		<span class="title">Tea Tree App ( Backbone+jQM )</span>
-		<a href="#new-tea" class="new" data-role="button" data-inline="true" 
-				data-icon="plus">New Tea</a>
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<a href="#new-tea" class="new" data-role="button" data-icon="plus">Add</a>
+		<span class="title">Tea Tree</span>
+		<button data-icon="refresh"
+			onclick="location.reload();">Refresh</button>
 	</div>
 
 	<div id="nav" data-role="content"></div>
@@ -75,12 +84,11 @@
 
 </div>
 
-<div id="tea-details" data-title="Tea Details" data-role="page" 
+<div id="tea-details" data-title="Tea Details" data-role="page" data-overflow="auto" 
 	data-fullscreen="true">
 
-	<div id="header" data-role="header" data-overflow="auto" 
-		data-theme="c">
-		<button data-role="button" data-inline="true" 
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<button data-inline="true" data-direction="reverse"
 			data-icon="arrow-l" onclick="$.mobile.changePage( $('#tea-list') );">
 				Back</button>
 		<span class="title">Tea Details</span>
@@ -95,12 +103,12 @@
 
 </div>
 
-<div id="new-tea" data-title="New Tea" data-role="page" data-fullscreen="true">
+<div id="new-tea" data-title="New Tea" data-role="page" data-overflow="auto" data-fullscreen="true">
 
-	<div id="header" data-role="header" data-overflow="auto" 
+	<div id="header" data-role="header" data-position="fixed" data-direction="reverse"
 		data-theme="c">
-		<button class="back" data-role="button" data-inline="true" 
-			data-icon="back" onclick="$.mobile.changePage( $('#tea-list') );" > Back</button>
+		<button class="back" data-role="button" data-icon="back" 
+			onclick="$.mobile.changePage( $('#tea-list') );" > Back</button>
 		<span class="title">New Tea</span>
 	</div>
 

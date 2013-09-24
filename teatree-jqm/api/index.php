@@ -7,9 +7,9 @@ $app = new Slim();
 $app->get('/teas', 'getTeas');
 $app->get('/teas/:id',	'getTea');
 /*$app->get('/teas/search/:query', 'findByName');*/
-$app->post('/teas', 'addTea');
+/*$app->post('/teas', 'addTea');
 $app->put('/teas/:id', 'updateTea');
-$app->delete('/teas/:id',	'deleteTea');
+$app->delete('/teas/:id',	'deleteTea');*/
 
 $app->run();
 
