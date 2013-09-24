@@ -29,7 +29,7 @@ Build a test environment:
 - Create test database: ebiz-ct, and table: ct_tbl_tea, and insert the test data by TeaTree-Backbone-Database.sql
 - Copy each app folder (like Tea Tree mobile app) under your XAMPP working path, like c:\xampp\htdocs
 
-Before you try to run each apps, I do suggest you look through following related of my blogs: 
+Before you run each app, I do suggest you look through following related of my blogs: 
 <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_blank">
 Backbone MV* App: Tea Tree</a> on www.ebizdesigner.com:
 - <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_black">Basic Infrastructure</a>
