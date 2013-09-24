@@ -6,11 +6,11 @@ Click <a href="http://demo.ebizdesigner.com/teatree/" target="_blank"><B>here<B>
 This series web apps are mainly based on Backbone.js with following features:
 
 - MVC SPAs having Backbone nested views, collection, and models
-- have data CRUD operations
+- Have data CRUD operations
    - whenever one Model's data change, all the Views bound automatically re-render 
    - be integrate with RESTful services based on Slim framework (PHP version)
    - use XMLHttpRequest object to upload picture data to web server
-- user can drag & drop image file and upload it to web server by HTML 5 APIs: FormData, FileReader
+- User can drag & drop image file and upload it to web server by HTML 5 APIs: FormData, FileReader
 - Responsive Web Design (RWD) application by CSS3 Media Queries 
 - Modular Backbone app by RequireJS, so as loading JS code as-needed
 - Mobilized web app by jQuery Mobile UI
@@ -25,9 +25,9 @@ Here is the folder structure:
    - \ teatree-jqmui \ [ Tea Tree mobilized web app ( Backbone app mobilized by jQuery Mobile UI ) ]
 
 Build a test environment:
-- install XAMPP (like 'c:\xampp')
-- create test database: ebiz-ct, and table: ct_tbl_tea, and insert the test data by TeaTree-Backbone-Database.sql
-- copy each app folder (like Tea Tree mobile app) under your XAMPP working path, like c:\xampp\htdocs
+- Install XAMPP (like 'c:\xampp')
+- Create test database: ebiz-ct, and table: ct_tbl_tea, and insert the test data by TeaTree-Backbone-Database.sql
+- Copy each app folder (like Tea Tree mobile app) under your XAMPP working path, like c:\xampp\htdocs
 
 Before you try to run each apps, I do suggest you look through following related of my blogs: 
 <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_blank">
