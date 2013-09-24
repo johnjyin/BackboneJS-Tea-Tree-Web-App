@@ -1,14 +1,14 @@
 BackboneJS-Tea-Tree-Web-App
 ===========================
 
-This web application (has different versions) is mainly based on Backbone.js with following features:
+This series web apps are mainly based on Backbone.js with following features:
 
 - is one MVC SPAs having Backbone nested views, collection, and models
 - have data CRUD operations
    - whenever one Model's data change, all the Views bound automatically re-render 
    - be integrate with RESTful services based on Slim framework (PHP version)
    - use XMLHttpRequest object to upload picture data to web server
-   - user can drag & drop image file and upload it to web server by HTML 5 APIs: FormData, FileReader
+- user can drag & drop image file and upload it to web server by HTML 5 APIs: FormData, FileReader
 - is one Responsive Web Design (RWD) application by CSS3 Media Queries 
 - is one modular Backbone app by RequireJS, so as loading JS code as-needed
 - is one mobilized web app by jQuery Mobile UI
@@ -18,10 +18,13 @@ Here is the folder structure:
    - TeaTree-Backbone-Database.sql 
    - \ teatree-backbone \ [ the basic backbone web app: Tea Tree ]
    - \ teatree-backbone-requirejs \ [ Tea Tree web app ( modular version ) ]
-   - \ teatree-jqm \ [ Tea Tree mobile app ( jQuery Mobile + Backbone ) ]
+   - \ teatree-jqm \ [ Tea Tree mobile app ( v1.0 )( jQuery Mobile + Backbone ) ]
    - \ teatree-jqmui \ [ Tea Tree mobilized web app ( Backbone app mobilized by jQuery Mobile UI ) ]
 
-You just need set up XAMPP on u local computer, which install one MYSQL database and table 'ct_tbl_tea' by TeaTree-Backbone-Database.sql
+Build a test environment:
+- install XAMPP (like 'c:\xampp')
+- create test database: ebiz-ct, and table: ct_tbl_tea, and insert the test data by TeaTree-Backbone-Database.sql
+- copy each app folder (like Tea Tree mobile app) under your XAMPP working path, like c:\xampp\htdocs
 
 Before you try to run each apps, I do suggest you look through following related of my blogs: 
 <a href="http://www.ebizdesigner.com/website-building/backbone/item/49-backbone-client-side-mvc-tree.html" target="_blank">
